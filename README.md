@@ -117,18 +117,17 @@ Dataset: cityscapes validation set
 
 ## Model weights
 
-[FlowNet2S](https://arxiv.org/abs/1612.01925) :  [Download](https://drive.google.com/file/d/1A8FKDbMKORz9U_swRxLaCUFcmY4eAZYj/view?usp=sharing)
+Download and put all model weights in `./weights`:
+
+SwiftNet: `./weights/cityscapes-swnet-R18.pt`
+
+FloeNet2S:  [Weights Download](https://drive.google.com/file/d/1A8FKDbMKORz9U_swRxLaCUFcmY4eAZYj/view?usp=sharing)
 
 **Reference：**
 
-```
-@misc{lee2021gsvnet,
-      title={GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video}, 
-      author={Shih-Po Lee and Si-Cun Chen and Wen-Hsiao Peng},
-      year={2021},
-      eprint={2103.08834},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
+SwiftNet: [In Defense of Pre-trained ImageNet Architectures for Real-time Semantic Segmentation of Road-driving Images](https://arxiv.org/abs/1903.08469)
+
+FlowNet2S:  [Evolution of Optical Flow Estimation with Deep Networks](https://arxiv.org/abs/1612.01925)
+
+GSVNet: [Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video](https://arxiv.org/abs/2103.08834)
 
