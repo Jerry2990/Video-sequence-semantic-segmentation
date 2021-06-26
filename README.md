@@ -76,9 +76,10 @@ Dataset: cityscapes validation set
                 color: #999; 
                 padding: 1px;
                 font-size:0.8rem">
-         Figure 1: Left to right. Raw input image, edge, our prediction, occlusion, ground truth.
+         Figure 1: Left to right. Raw input image, edge, SwNet-seq Net prediction, occlusion, ground truth.
     </div> 
 </center>
+
 
 ------
 
@@ -90,28 +91,29 @@ Dataset: cityscapes validation set
                 display: inline-block;
                 color: #999; 
                 padding: 1px;
-                font-size:0.8rem">Figure 2: Top to bottom. Raw input image, SwiftNet prediction, our prediction.<br>          Left to right. Key frame k, non-key frame k+1, k+2, k+3, k+4
+                font-size:0.8rem">Figure 2: Top to bottom. Raw input image, SwiftNet prediction, SwNet-seq Net prediction.<br>Left to right. Key frame k, non-key frame k+1, k+2, k+3, k+4
     </div> 
 </center>
 
+
 ------
 
-| Net             | frame interval | Input scale | avg mIoU | min IoU<br>w/wo edge | FPS-G | FPS-T |
-| :-------------- | -------------- | ----------- | -------- | -------------------- | ----- | ----- |
-| Swift Net       | i = 0          | 0.75        | 74.4     | 74.4                 | 26    | 109   |
-| SwNet-seq(ours) | i = 1          | 0.75        | 73.7     | 73.0/72.6            | 44    | 171   |
-| SwNet-seq(ours) | i = 2          | 0.75        | 72.6     | 70.6/70.1            | 58    | 181   |
-| SwNet-seq(ours) | i = 3          | 0.75        | 71.8     | 69.5/68.8            | 67    | 186   |
-| SwNet-seq(ours) | i = 4          | 0.75        | 70.9     | 67.6/66.8            | 75    | 193   |
+| Net           | frame interval | Input scale | avg mIoU | min IoU<br>w/wo edge | FPS-G | FPS-T |
+| :------------ | -------------- | ----------- | -------- | -------------------- | ----- | ----- |
+| Swift Net     | i = 0          | 0.75        | 74.4     | 74.4                 | 26    | 109   |
+| SwNet-seq Net | i = 1          | 0.75        | 73.7     | 73.0/72.6            | 44    | 171   |
+| SwNet-seq Net | i = 2          | 0.75        | 72.6     | 70.6/70.1            | 58    | 181   |
+| SwNet-seq Net | i = 3          | 0.75        | 71.8     | 69.5/68.8            | 67    | 186   |
+| SwNet-seq Net | i = 4          | 0.75        | 70.9     | 67.6/66.8            | 75    | 193   |
 
-| Net             | frame interval | Input scale | avg mIoU | min IoU<br>w/wo edge | FPS-G | FPS-T |
-| --------------- | -------------- | ----------- | -------- | -------------------- | ----- | ----- |
-| Swift Net       | i = 0          | 0.5         | 70.3     | 70.3                 | 52    | 180   |
-| Swift Net       | i = 0          | 0.75        | 74.4     | 74.4                 | 26    | 109   |
-| Swift Net       | i = 0          | 1.0         | 74.6     | 74.6                 | 15    | 63    |
-| SwNet-seq(ours) | i = 2          | 0.5         | 69.1     | 67.5/67.0            | 103   | 194   |
-| SwNet-seq(ours) | i = 2          | 0.75        | 72.6     | 70.6/70.1            | 58    | 181   |
-| SwNet-seq(ours) | i = 2          | 1.0         | 73.4     | 72.0/71.3            | 36    | 127   |
+| Net           | frame interval | Input scale | avg mIoU | min IoU<br>w/wo edge | FPS-G | FPS-T |
+| ------------- | -------------- | ----------- | -------- | -------------------- | ----- | ----- |
+| Swift Net     | i = 0          | 0.5         | 70.3     | 70.3                 | 52    | 180   |
+| Swift Net     | i = 0          | 0.75        | 74.4     | 74.4                 | 26    | 109   |
+| Swift Net     | i = 0          | 1.0         | 74.6     | 74.6                 | 15    | 63    |
+| SwNet-seq Net | i = 2          | 0.5         | 69.1     | 67.5/67.0            | 103   | 194   |
+| SwNet-seq Net | i = 2          | 0.75        | 72.6     | 70.6/70.1            | 58    | 181   |
+| SwNet-seq Net | i = 2          | 1.0         | 73.4     | 72.0/71.3            | 36    | 127   |
 
 **Note**: Due to device and environment, FPS test results may vary from device to device and are only for relative reference.
 
