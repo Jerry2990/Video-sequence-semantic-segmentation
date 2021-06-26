@@ -52,6 +52,6 @@ class cityscapes_config(object):
     swnet_weight_path = './weights/cityscapes-swnet-R18.pt'
     # bsnet_weight_path = ''
     # resume_bsnet_path = ''
-    resume_swnet_path = './weights/swnet_w_edge_reshow_model_best.pth.tar'
+    resume_swnet_path = './weights/cityscapes-swnet_model_best.pth.tar'
     optical_flow_network_path = './weights/flownet.pth.tar'
     data_path = './data/cityscapes_sequence/' # put specified data path here

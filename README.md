@@ -6,7 +6,7 @@ Video semantic segmentation has a high computational cost and slow speed. It is 
 
 ## Dataset
 
-Cityscapes leftImg8bit_sequence dataset: log in the official website to view and download If necessary.
+Cityscapes leftImg8bit_sequence dataset: log in the [official website](https://www.cityscapes-dataset.com/) to view and download If necessary.
 
 Train on training set, and evaluate model on validation set.
 
@@ -120,6 +120,8 @@ Dataset: cityscapes validation set
 ## Model weights
 
 Download and put all model weights in `./weights`:
+
+SwNet-seq Net: `./weights/cityscapes-swnet_model_best.pth.tar`
 
 SwiftNet: `./weights/cityscapes-swnet-R18.pt`
 

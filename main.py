@@ -48,7 +48,7 @@ parser.add_argument('--optical-flow-lr', type=float, help="learning rate of the 
 parser.add_argument('--train-optical-flow', type=str2bool, default=1, help='1 for training, 0 for evaluating')
 
 # Evaluation
-parser.add_argument('--evaluate', type=str2bool, default='1', help="set to 1 if ")
+parser.add_argument('--evaluate', type=str2bool, default='0', help="set to 1 if evaluate")
 parser.add_argument('--eval-interval', type=int, default=1, help='evaluation interval (default: 1). (Fixed)')
 parser.add_argument('--eval-scale', type=float, default=0.75, help="scale of original input image resolution")
 parser.add_argument('--checkname', type=str, default='swnet-seq-test', help="Name of this run")
